@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stickers</title>
-</head>
-<body>
-    
+    <title>Seleccionar Stickers</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
 
+        .sticker-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .sticker {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            width: 50px;
+            margin-top: 10px;
+        }
+
+        #mensaje {
+            margin-top: 20px;
+            font-family: bold;
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Selecciona hasta <strong>10</strong> Stickers </h1>
+    <div class="sticker-container">
+        <div class="sticker">
+            <img src="./assets/img/stcker1.png" alt="Sticker 1" width="100">
+            <input type="number" class="sticker-input" data-id="sticker1" value="0" min="0" max="10">
+        </div>
+
+        <div class="sticker">
+            <img src="./assets/img/stcker2.png" alt="Sticker 2" width="100">
+            <input type="number" class="sticker-input" data-id="sticker2" value="0" min="0" max="10">
+        </div>
+
+        <div class="sticker">
+            <img src="./assets/img/stcker3.png" alt="Sticker 2" width="100">
+            <input type="number" class="sticker-input" data-id="sticker3" value="0" min="0" max="10">
+        </div>
+
+    </div>
+
+    <p id="mensaje"></p>
 
     <script src="./assets/js/index2.js"></script>
 </body>
