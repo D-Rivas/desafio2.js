@@ -6,102 +6,80 @@
     <title>Verificación de Password</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             display: flex;
+            height: 100vh;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            background-color: #f9f9f9;
         }
-
         .container {
+            border: 1px solid black;
+            padding: 20px;
             text-align: center;
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
         }
-
         select {
-            display: block;
-            margin: 10px 0;
-            padding: 8px;
-            width: 100%;
+            margin: 5px;
             font-size: 16px;
-            border-radius: 5px;
         }
-
         button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            margin-top: 10px;
+            padding: 5px 15px;
             font-size: 16px;
-            width: 100%;
-            margin-top: 20px;
         }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        #result {
-            font-size: 16px;
+        p {
+            margin-top: 15px;
             font-weight: bold;
-            color: #333;
-            margin-top: 20px;
         }
+    </style>
     </style>
 </head>
 
 <body>
     <div class="container">
-        <label for="digit1">Dígito 1:</label>
-        <select id="digit1">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-
-        <label for="digit2">Dígito 2:</label>
-        <select id="digit2">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-
-        <label for="digit3">Dígito 3:</label>
-        <select id="digit3">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-        </select>
-
-        <button id="checkPassword">Ingresar</button>
-
-        <p id="result"></p>
+        <h2>Ingresa el password</h2>
+    
+        <div>
+            <select id="digit1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+    
+            <select id="digit2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+    
+            <select id="digit3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+    
+        <button id="check">Ingresar</button>
+    
+        <p id="message"></p>
     </div>
     <script src="./assets/js/index3.js"></script>
 </body>
